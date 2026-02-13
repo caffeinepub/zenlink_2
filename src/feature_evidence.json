@@ -1,0 +1,25 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-home-page-welcome-heading-to-replace-the-text-welcome-back-with-welcome-to-your-growth-space-while-still-displaying-the-user-s-anonymous-username-in-the-greeting",
+      "featureTitle": "Update the Home page welcome heading to replace the text “Welcome back” with “Welcome to your growth space”, while still displaying the user’s anonymous username in the greeting.",
+      "files": [
+        "frontend/src/pages/Home.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "blob-storage@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

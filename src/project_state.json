@@ -1,0 +1,261 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "Build Zenlink (ZENLINK), a modern, calm, anonymous emotional-growth/connection web platform (not social media) with voice-first interactions, AI-driven matching and reflection insights, Growth Circles, challenges, and strong safety/moderation, delivered as a hackathon-ready full-stack MVP with a polished responsive UI.",
+  "architectural_notes": [
+    "Target stack: React + Tailwind CSS frontend; Node.js + Express backend; MongoDB or Firebase DB.",
+    "Auth: Firebase Auth with email/phone OTP verification.",
+    "Real-time: Socket.io or Firebase Realtime Database.",
+    "Design principle: avoid vanity metrics/infinite scroll; prioritize mindful, psychologically safe UX."
+  ],
+  "known_issues": [
+    "Build/deploy pipeline is failing with a recurring “Configuration error encountered” message during builds."
+  ],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-cohesive-modern-dreamy-soft-tech-visual-theme-for-zenlink-and-apply-it-consistently-across-the-landing-page-and-all-app-screens-dark-theme-with-soft-gradients-midnight-blue-soft-lavender-moon-grey-glassmorphism-cards-rounded-corners-subtle-cyan-or-warm-violet-accent-glow-clean-typography-calm-micro-interactions-animations-and-mobile-first-responsive-layout",
+      "title": "Create a cohesive, modern “dreamy soft-tech” visual theme for ZENLINK and apply it consistently across the landing page and all app screens: dark theme with soft gradients (midnight blue + soft lavender + moon grey), glassmorphism cards, rounded corners, subtle cyan or warm violet accent glow, clean typography, calm micro-interactions/animations, and mobile-first responsive layout.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-an-anonymous-identity-and-authentication-flow-using-internet-identity-ii-as-the-only-real-authentication-method-with-an-onboarding-sequence-that-collects-terms-conditions-acceptance-anonymous-username-with-a-clear-warning-not-to-use-real-names-avatar-selection-symbolic-illustrated-interests-a-short-perspective-bio-growth-goals-selection-optional-mbti-test-skip-allowed-and-an-mbti-visibility-toggle",
+      "title": "Implement an anonymous identity and authentication flow using Internet Identity (II) as the only real authentication method, with an onboarding sequence that collects: Terms & Conditions acceptance, anonymous username (with a clear warning not to use real names), avatar selection (symbolic/illustrated), interests, a short “perspective” bio, growth goals selection, optional MBTI test (skip allowed), and an MBTI visibility toggle.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-landing-page-with-calming-mature-copy-and-clear-positioning-that-differentiates-zenlink-from-social-media-anonymous-chat-apps-and-therapy-apps-include-a-primary-headline-connect-beyond-identity-and-a-secondary-tagline-variant-a-gentle-space-to-be-heard-with-concise-product-explanation-and-a-single-clear-call-to-action-to-sign-in",
+      "title": "Build the landing page with calming, mature copy and clear positioning that differentiates ZENLINK from social media, anonymous chat apps, and therapy apps; include a primary headline (“Connect Beyond Identity”) and a secondary tagline variant (“A gentle space to be heard.”) with concise product explanation and a single clear call-to-action to sign in.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-main-app-shell-with-a-bottom-navigation-mobile-and-sidebar-desktop-for-home-wall-global-problem-sharing-circles-rooms-connections-mbti-profile-debate-and-safety-guidelines-ensure-navigation-avoids-infinite-scrolling-patterns-and-promotes-mindful-usage-clear-page-boundaries-load-more-instead-of-endless-feed",
+      "title": "Create the main app shell with a bottom navigation (mobile) and sidebar (desktop) for: Home, Wall (Global Problem Sharing), Circles, Rooms, Connections, MBTI, Profile, Debate, and Safety/Guidelines. Ensure navigation avoids infinite scrolling patterns and promotes mindful usage (clear page boundaries, “Load more” instead of endless feed).",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-home-dashboard-as-a-card-slide-based-hub-showing-user-avatar-anonymous-username-daily-challenge-one-per-day-with-gentle-progress-indicator-weekly-challenges-moments-entry-point-rooms-discover-create-circles-your-circles-create-join-weekly-highlights-top-moments-top-topics-module-recognition-without-follower-like-obsession-and-shortcuts-to-mbti-and-connections",
+      "title": "Build the Home Dashboard as a card/slide-based hub showing: user avatar + anonymous username, Daily Challenge (one per day with gentle progress indicator), Weekly Challenges/Moments entry point, Rooms (discover + create), Circles (your circles + create/join), Weekly Highlights/Top Moments/Top Topics module (recognition without follower/like obsession), and shortcuts to MBTI and Connections.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-growth-circles-users-can-create-a-circle-generate-share-an-invite-link-code-join-via-invite-manage-membership-up-to-8-and-access-a-circle-feed-that-includes-guided-weekly-reflection-prompts-and-circle-only-posts-voice-notes-voice-first-ui",
+      "title": "Implement Growth Circles: users can create a circle, generate/share an invite link/code, join via invite, manage membership up to 8, and access a circle feed that includes guided weekly reflection prompts and circle-only posts/voice notes (voice-first UI).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-rooms-as-voice-only-participation-spaces-create-room-title-short-topic-bio-discover-join-rooms-filter-sort-by-interests-and-mbti-compatibility-and-support-posting-listening-to-voice-notes-in-a-room-no-required-text-chat-include-sound-wave-visual-elements-in-the-ui",
+      "title": "Implement Rooms as voice-only participation spaces: create room (title + short topic/bio), discover/join rooms, filter/sort by interests and MBTI compatibility, and support posting/listening to voice notes in a room (no required text chat). Include sound-wave visual elements in the UI.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-voice-first-1-1-chats-between-connected-users-using-voice-note-style-messages-push-to-talk-ux-provide-guidance-copy-discouraging-personal-info-sharing-plus-leave-chat-block-and-report-actions-inside-the-chat",
+      "title": "Implement Voice-first 1:1 Chats between connected users using voice-note style messages (push-to-talk UX). Provide guidance copy discouraging personal info sharing, plus Leave chat, Block, and Report actions inside the chat.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-the-global-problem-sharing-wall-allow-anonymous-posts-category-text-show-posts-in-a-modern-card-layout-with-timestamps-allow-comments-advice-allow-liking-helpful-comments-not-posts-and-provide-a-connect-privately-action-under-a-comment-that-initiates-a-connection-request-flow",
+      "title": "Build the Global Problem Sharing Wall: allow anonymous posts (category + text), show posts in a modern card layout with timestamps, allow comments/advice, allow liking helpful comments (not posts), and provide a “Connect Privately” action under a comment that initiates a connection request flow.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-mbti-module-20-multiple-choice-questions-compute-a-resulting-mbti-type-store-privately-per-user-allow-retake-provide-a-short-learn-about-your-personality-screen-and-use-mbti-to-compute-a-compatibility-percentage-when-suggesting-connections-and-filtering-rooms",
+      "title": "Implement the MBTI module: ~20 multiple-choice questions, compute a resulting MBTI type, store privately per user, allow retake, provide a short “learn about your personality” screen, and use MBTI to compute a compatibility percentage when suggesting connections and filtering rooms.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-the-connections-system-suggest-users-based-on-shared-interests-growth-goals-and-mbti-compatibility-allow-sending-connection-requests-allow-accept-decline-show-existing-connections-and-ensure-suggestions-do-not-reveal-real-identities-only-avatar-anonymous-username-optional-mbti-visibility",
+      "title": "Implement the Connections system: suggest users based on shared interests, growth goals, and MBTI compatibility; allow sending connection requests; allow accept/decline; show existing connections; and ensure suggestions do not reveal real identities (only avatar + anonymous username + optional MBTI visibility).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-the-ai-reflection-assistant-as-an-on-platform-heuristic-analyzer-no-external-llm-analyze-a-selected-conversation-thread-circle-room-or-chat-and-generate-structured-feedback-including-tone-label-empathy-score-0-100-communication-suggestions-and-growth-insights-store-reflection-history-per-user-and-surface-it-in-a-progress-dashboard-with-growth-streaks-and-emotional-intelligence-indicators-no-vanity-metrics",
+      "title": "Create the AI Reflection Assistant as an on-platform heuristic analyzer (no external LLM): analyze a selected conversation thread (circle, room, or chat) and generate structured feedback including tone label, empathy score (0–100), communication suggestions, and growth insights; store reflection history per user and surface it in a Progress Dashboard with growth streaks and emotional-intelligence indicators (no vanity metrics).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-weekly-debate-admin-can-set-one-topic-per-week-users-can-post-voice-first-opinions-voice-note-with-optional-short-text-allow-like-and-reply-to-debate-responses-display-the-active-weekly-topic-prominently",
+      "title": "Implement Weekly Debate: admin can set one topic per week; users can post voice-first opinions (voice note) with optional short text; allow like and reply to debate responses; display the active weekly topic prominently.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-safety-moderation-mvp-provide-community-guidelines-page-block-and-report-flows-across-wall-comments-chats-rooms-circles-circle-level-privacy-controls-invite-only-and-basic-harmful-word-detection-filtering-on-user-entered-text-fields-with-a-clear-calm-error-message-include-an-admin-moderation-screen-to-review-reports-and-take-action-e-g-hide-content-suspend-user",
+      "title": "Safety & Moderation MVP: provide community guidelines page, block and report flows across wall/comments/chats/rooms/circles, circle-level privacy controls (invite-only), and basic harmful-word detection filtering on user-entered text fields with a clear, calm error message. Include an admin moderation screen to review reports and take action (e.g., hide content, suspend user).",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-seed-realistic-demo-dummy-data-for-hackathon-usability-without-requiring-multiple-real-users-sample-rooms-sample-circles-sample-wall-posts-comments-sample-weekly-topic-and-highlights-and-sample-challenges-ensure-seeded-entities-are-clearly-marked-as-demo-in-the-ui-and-can-be-reset-from-a-developer-only-control",
+      "title": "Seed realistic demo/dummy data for hackathon usability (without requiring multiple real users): sample rooms, sample circles, sample wall posts/comments, sample weekly topic and highlights, and sample challenges; ensure seeded entities are clearly marked as “Demo” in the UI and can be reset from a developer-only control.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-home-page-welcome-heading-to-replace-the-text-welcome-back-with-welcome-to-your-growth-space-while-still-displaying-the-user-s-anonymous-username-in-the-greeting",
+      "title": "Update the Home page welcome heading to replace the text “Welcome back” with “Welcome to your growth space”, while still displaying the user’s anonymous username in the greeting.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create modern, minimal, calming ZENLINK responsive UI (landing + app-ready screens) with dreamy soft-tech dark theme, gradients, glassmorphism cards, rounded corners, smooth animations, and calming microcopy",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Implement authentication & onboarding: email/phone OTP, T&C acceptance, anonymous unique user ID/username (warn against real names), avatar/Bitmoji selection, password, interests, short perspective/bio, optional MBTI test + visibility toggle",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Home dashboard with card/slide-based blocks: daily challenges, rooms (voice-only), circles, weekly challenges/moments, weekly app-created global moderated room, weekly highlights/top moments/topics, and navigation to core sections",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Anonymous identity system: no real names/profile photos; symbolic avatars; privacy-first defaults",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "AI matching & recommendations: match users by growth goals, interests, personality/MBTI, interaction patterns; recommend rooms/circles/connections; avoid addictive infinite scrolling",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Growth Circles feature: small private groups (5–8) with invite links, guided discussions, weekly reflection prompts, and voice-first interaction",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Voice-first communication features: voice-only rooms, voice-note style chats (push-to-talk), sound-wave UI elements, and voice-based responses where applicable",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "AI Reflection Assistant: analyze conversations to provide tone analysis, empathy score, communication suggestions, and growth insights; store reflection history",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Personal progress dashboard: growth streaks, emotional intelligence indicators, reflection history, communication development metrics; reward constructive engagement (no likes/followers/vanity metrics)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Global problem sharing wall: anonymous posts, comments/advice, like helpful comments, connect privately CTA, timestamps, modern card layout, demo dummy data",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "MBTI personality test module: ~20 MCQ, compute type, store privately, compatibility percentage, compatible user suggestions, retake and learn-about screens",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Connections system: suggested users, send/accept/decline connection requests, show avatar + username + compatibility, and existing connections list",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Private rooms / chat system: real-time messaging (voice-first preferred), leave anytime, no personal info sharing guidance, block/report inside chat",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Weekly debate section: admin sets weekly topic, users post opinions, like & reply to responses",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Safety & moderation: block/report, community guidelines, harmful-word detection filter, circle-level privacy controls, AI-assisted moderation future-ready, and admin moderation dashboard",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-16",
+      "summary": "Full-stack MVP architecture using React + Tailwind frontend and Node.js/Express backend with MongoDB or Firebase; OTP auth via Firebase Auth; real-time via Socket.io or Firebase Realtime DB",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Implement core domain models and persistence in the single Motoko main actor for: Users (anonymous profile), Interests, Growth Goals, MBTI result + visibility, Connections (requests + accepted), Circles (5–8 members, invite code/link), Rooms (voice-only rooms metadata), Posts (global wall), Comments, Weekly Debate topic + responses, Challenges (daily/weekly), Reflections (assistant outputs), Moderation (reports/blocks), and simple admin role.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Update UI greeting microcopy: replace “Welcome back” with “Welcome to your growth space”.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "ZENLINK",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

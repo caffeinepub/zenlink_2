@@ -1,0 +1,11 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, authentication flow, and route definitions for all ZENLINK pages. Extracts root component logic into a properly named React component (RootComponent) to fix React Hooks rules violations.",
+  "frontend/src/pages/ChatThread.tsx": "Voice-first 1:1 chat interface with safety guidance, voice recording controls, and optional text messaging. Updated Tailwind classes from flex-shrink-0 to shrink-0.",
+  "frontend/src/pages/CircleDetail.tsx": "Circle detail page showing circle information, weekly reflection prompt, member list, and placeholder for future voice feed. Updated Tailwind classes from flex-shrink-0 to shrink-0.",
+  "frontend/src/pages/Home.tsx": "Home dashboard displaying welcome message with \"Welcome to your growth space\" greeting, daily challenge, quick action cards for circles/rooms/connections, weekly highlights, and user's growth goals.",
+  "frontend/src/pages/Onboarding/OnboardingFlow.tsx": "Multi-step onboarding flow collecting terms acceptance, anonymous username, avatar, interests, growth goals, bio, and optional MBTI preferences. Updated Tailwind classes from flex-shrink-0 to shrink-0.",
+  "frontend/src/pages/Guidelines.tsx": "Community guidelines page with calm microcopy explaining platform rules, safety principles, prohibited behaviors, and crisis resources.",
+  "frontend/src/pages/Moderation.tsx": "Admin-only moderation dashboard placeholder showing access-denied message for non-admin users.",
+  "frontend/src/components/zen/GlassCard.tsx": "Reusable glassmorphism card component with optional hover effect and onClick handler support for interactive cards. Provides consistent styling across the ZENLINK application.",
+  "frontend/src/pages/Progress.tsx": "Progress dashboard displaying user's emotional growth metrics including streak, reflections count, empathy score, communication development, and recent reflection history without vanity metrics. Shows growth indicators with progress bars and recent reflection insights."
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "build_request",
+  "title": "Update Home greeting microcopy",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "text": "Update the Home page welcome heading to replace the text “Welcome back” with “Welcome to your growth space”, while still displaying the user’s anonymous username in the greeting.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "It's better if you could replace welcome back with welcome to your growth space"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On the Home page (frontend/src/pages/Home.tsx), the heading currently rendered as “Welcome back, {username}” is updated so the visible phrase “Welcome back” no longer appears.",
+        "The new heading includes the exact phrase “Welcome to your growth space” and still includes the user’s anonymous username (when available).",
+        "No other screens’ copy is changed as part of this request."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui (Shadcn components are read-only).",
+    "Keep all user-facing text in English."
+  ],
+  "nonGoals": [
+    "Fixing the build/deploy “Configuration error encountered” issue.",
+    "Reordering icons or changing navigation structure beyond the greeting text update."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

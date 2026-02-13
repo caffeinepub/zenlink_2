@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 1rem;
+        --background: 0.98 0 0;
+        --foreground: 0.15 0 0;
+        --card: 1 0 0;
+        --card-foreground: 0.15 0 0;
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0 0;
+        --primary: 0.45 0.12 270;
+        --primary-foreground: 0.98 0 0;
+        --secondary: 0.55 0.08 240;
+        --secondary-foreground: 0.98 0 0;
+        --muted: 0.92 0 0;
+        --muted-foreground: 0.55 0 0;
+        --accent: 0.65 0.15 280;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.55 0.22 25;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.88 0 0;
+        --input: 0.88 0 0;
+        --ring: 0.65 0.15 280;
+        --chart-1: 0.65 0.18 270;
+        --chart-2: 0.60 0.12 240;
+        --chart-3: 0.70 0.10 200;
+        --chart-4: 0.55 0.15 290;
+        --chart-5: 0.75 0.12 260;
+    }
+
+    .dark {
+        --background: 0.12 0.02 260;
+        --foreground: 0.95 0.01 280;
+        --card: 0.18 0.03 265;
+        --card-foreground: 0.95 0.01 280;
+        --popover: 0.15 0.03 265;
+        --popover-foreground: 0.95 0.01 280;
+        --primary: 0.65 0.15 280;
+        --primary-foreground: 0.12 0.02 260;
+        --secondary: 0.25 0.05 270;
+        --secondary-foreground: 0.95 0.01 280;
+        --muted: 0.22 0.04 265;
+        --muted-foreground: 0.65 0.02 270;
+        --accent: 0.55 0.18 285;
+        --accent-foreground: 0.98 0 0;
+        --destructive: 0.60 0.25 20;
+        --destructive-foreground: 0.98 0 0;
+        --border: 0.25 0.05 270 / 30%;
+        --input: 0.25 0.05 270 / 40%;
+        --ring: 0.55 0.18 285;
+        --chart-1: 0.65 0.18 270;
+        --chart-2: 0.60 0.12 240;
+        --chart-3: 0.70 0.10 200;
+        --chart-4: 0.55 0.15 290;
+        --chart-5: 0.75 0.12 260;
+        
+        /* Zenlink custom tokens */
+        --zen-glow: 0.70 0.20 285;
+        --zen-lavender: 0.65 0.15 280;
+        --zen-midnight: 0.18 0.05 260;
+        --zen-moon: 0.55 0.02 270;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground antialiased;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+    
+    /* Dreamy gradient background */
+    .zen-gradient-bg {
+        background: linear-gradient(135deg, 
+            oklch(0.12 0.02 260) 0%, 
+            oklch(0.15 0.04 270) 50%, 
+            oklch(0.18 0.03 265) 100%);
+    }
+    
+    /* Glassmorphism effect */
+    .glass-card {
+        background: oklch(0.18 0.03 265 / 0.6);
+        backdrop-filter: blur(20px);
+        border: 1px solid oklch(0.25 0.05 270 / 0.3);
+        box-shadow: 0 8px 32px 0 oklch(0.08 0.02 260 / 0.37);
+    }
+    
+    /* Glow effect */
+    .zen-glow {
+        box-shadow: 0 0 20px oklch(var(--zen-glow) / 0.3),
+                    0 0 40px oklch(var(--zen-glow) / 0.15);
+    }
+    
+    /* Smooth transitions */
+    .zen-transition {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+

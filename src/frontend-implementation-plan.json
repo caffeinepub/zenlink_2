@@ -1,0 +1,23 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Home greeting microcopy update",
+  "requirements": [
+    {
+      "id": "REQ-17",
+      "summary": "Update the Home page greeting heading to use “Welcome to your growth space” while still showing the anonymous username.",
+      "acceptanceCriteria": [
+        "On the Home page (frontend/src/pages/Home.tsx), the heading currently rendered as “Welcome back, {username}” is updated so the visible phrase “Welcome back” no longer appears.",
+        "The new heading includes the exact phrase “Welcome to your growth space” and still includes the user’s anonymous username (when available).",
+        "No other screens’ copy is changed as part of this request."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/Home.tsx",
+          "operation": "modify",
+          "description": "Change the welcome <h1> microcopy from “Welcome back, {username}” to “Welcome to your growth space, {username}” (or equivalent rendering) while keeping the username display behavior intact; ensure only this Home heading text changes and keep all user-facing text in English. Do not modify any files under frontend/src/components/ui."
+        }
+      ]
+    }
+  ]
+}
